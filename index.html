@@ -4,26 +4,70 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Marcos Vinicius | Software Engineer</title>
     <meta name="description" content="Engenheiro de Software especialista em Front-end e React.">
 
+    <!-- Cor da barra superior no mobile -->
     <meta name="theme-color" content="#007bff">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://portfolio-ten-pied-x4n6outkgn.vercel.app/">
     <meta property="og:title" content="Marcos Vinicius | Software Engineer">
     <meta property="og:description" content="Engenheiro de Software especialista em Front-end e React.">
     <meta property="og:image" content="https://portfolio-ten-pied-x4n6outkgn.vercel.app/marcosp.jpeg">
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://portfolio-ten-pied-x4n6outkgn.vercel.app/">
     <meta name="twitter:title" content="Marcos Vinicius | Software Engineer">
     <meta name="twitter:description" content="Engenheiro de Software especialista em Front-end e React.">
     <meta name="twitter:image" content="https://portfolio-ten-pied-x4n6outkgn.vercel.app/marcosp.jpeg">
 
+    <!-- CSS para navegação azul no mobile -->
+    <style>
+      nav {
+        background-color: white; /* padrão desktop */
+        padding: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          background-color: #007bff; /* azul no mobile */
+        }
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      @media (min-width: 769px) {
+        nav a {
+          color: black; /* links pretos no desktop */
+        }
+      }
+    </style>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
